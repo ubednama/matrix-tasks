@@ -16,8 +16,8 @@ const Navbar = () => {
           <span className="text-xl font-semibold">TaskMatrix</span>
         </div>
         <div className="flex items-center gap-2 px-3 py-1 rounded-md">
-          <span className="text-[#00C2A9] text-xs hidden sm:flex bg-[#333333] p-1.5 rounded-md">Quick decision making tool</span>
-          <span className="p-2 text-xs bg-white/10 rounded-md">BETA</span>
+          <span className="text-[#00C2A9] text-xs hidden sm:flex bg-slate-200 dark:bg-[#333333] p-1.5 rounded-md">Quick decision making tool</span>
+          <span className="p-2 text-xs dark:bg-white/10 bg-green-200 rounded-md">BETA</span>
         </div>
       </div>
 
