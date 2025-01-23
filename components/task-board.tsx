@@ -291,7 +291,7 @@ export default function TaskBoard() {
                                 variant="ghost"
                                 size="icon"
                                 onClick={() => toggleTaskCompletion(taskId)}
-                                className={`${taskStatusConfig[section].textColor}`}
+                                className={`${taskStatusConfig[section].textColor} ${taskStatusConfig[section].hover}`}
                               >
                                 {task.completed ? (
                                   <CheckCircle2 className="h-5 w-5" />
