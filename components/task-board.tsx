@@ -291,7 +291,7 @@ export default function TaskBoard() {
                                 variant="ghost"
                                 size="icon"
                                 onClick={() => toggleTaskCompletion(taskId)}
-                                className={taskStatusConfig[section].textColor}
+                                className={`${taskStatusConfig[section].textColor}`}
                               >
                                 {task.completed ? (
                                   <CheckCircle2 className="h-5 w-5" />
@@ -322,12 +322,12 @@ export default function TaskBoard() {
                             </div>
                             <div className="flex items-center gap-3 px-2">
                               <Pencil
-                                className="h-4 w- text-black"
+                                className="h-4 w- text-black cursor-pointer"
                                 onClick={() => handleEditClick(taskId)}
                               />
                               <Trash2
                                 color="red"
-                                className="h-4 w-4"
+                                className="h-4 w-4 cursor-pointer"
                                 onClick={() => handleDeleteClick(taskId)}
                               />
                             </div>
