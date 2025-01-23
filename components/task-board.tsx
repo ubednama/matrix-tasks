@@ -322,12 +322,11 @@ export default function TaskBoard() {
                             </div>
                             <div className="flex items-center gap-3 px-2">
                               <Pencil
-                                className="h-4 w- text-black cursor-pointer"
+                                className={`h-4 text-black cursor-pointer ${taskStatusConfig[section].textColor}`}
                                 onClick={() => handleEditClick(taskId)}
                               />
                               <Trash2
-                                color="red"
-                                className="h-4 w-4 cursor-pointer"
+                                className={`h-4 w-4 cursor-pointer  text-red-600 ${section == "eliminate" ? "dark:text-red-950" : "dark:text-red-500"}`}
                                 onClick={() => handleDeleteClick(taskId)}
                               />
                             </div>
