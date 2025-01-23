@@ -282,7 +282,7 @@ export default function TaskBoard() {
                             className={cn(
                               taskStatusConfig[section].bgColor,
                               taskStatusConfig[section].borderColor,
-                              `rounded-sm flex items-center justify-between w-[95%] mb-0.5`,
+                              `rounded-sm flex items-center justify-between mb-0.5`,
                               task.completed && "opacity-50"
                             )}
                           >
@@ -320,9 +320,9 @@ export default function TaskBoard() {
                                 </span>
                               )}
                             </div>
-                            <div className="flex items-center gap-2 px-2">
+                            <div className="flex items-center gap-3 px-2">
                               <Pencil
-                                className="h-4 w-4"
+                                className="h-4 w- text-black"
                                 onClick={() => handleEditClick(taskId)}
                               />
                               <Trash2
