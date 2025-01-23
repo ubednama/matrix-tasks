@@ -9,11 +9,6 @@ export default {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    content: [
-      "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-      "./components/**/*.{js,ts,jsx,tsx,mdx}",
-      "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    ],
     safelist: [
       "bg-red-800",
       "bg-red-200",
