@@ -1,5 +1,5 @@
-import Navbar from "@/components/Navbar"
-import TaskBoard from "@/components/task-board"
+import Navbar from "@/components/shared/Navbar"
+import TaskBoard from "@/components/TaskBoard/TaskBoard"
 
 export default function Home() {
   return (

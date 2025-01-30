@@ -10,12 +10,12 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Pencil, Trash2, Plus, Edit, CheckCircle2, Circle } from "lucide-react";
 import { v4 as uuidv4 } from "uuid";
-import { AddTaskModal } from "./add-task-modal";
-import { EditTaskModal } from "./edit-task-modal";
-import { DeleteTaskModal } from "./delete-task-modal";
-import { SelectSectionModal } from "./select-section-modal";
+import { AddTaskModal } from "./AddTaskModal";
+import { EditTaskModal } from "./EditTaskModal";
+import { DeleteTaskModal } from "./DeleteTaskModal";
+import { SelectSectionModal } from "./SelectSectionModal";
 import { cn } from "@/lib/utils";
-import { LoadingScreen } from "./loading";
+import { LoadingScreen } from "../shared/LoadingScreen";
 
 interface TaskWithCompletion extends Task {
   completed?: boolean;
@@ -242,7 +242,7 @@ export default function TaskBoard() {
                   <h2
                     className={cn(
                       `rounded-md p-1.5 text-lg font-bold px-3`,
-                      taskStatusConfig[section].textColor,
+                      taskStatusConfig[section].titleTextColor,
                       taskStatusConfig[section].bgColor
                     )}
                   >

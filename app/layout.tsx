@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "TaskMatrix - Quick Decision Making Tool",
   description: "Organize your tasks efficiently with the Eisenhower Matrix method",
   icons: {
-    icon: "/favicon.ico",
+    icon: "/favicon.png",
   },
 }
 

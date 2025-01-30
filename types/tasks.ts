@@ -22,3 +22,11 @@ export interface TaskState {
   tags: { [key: string]: string }
   titles: { [key: string]: string }
 }
+
+export interface StatusConfig {
+  bgColor: string
+  titleTextColor: string
+  textColor: string
+  hover?: string
+  borderColor: string
+}
